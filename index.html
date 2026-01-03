@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Happy Birthday Deeksha 🎉</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      height: 100vh;
+      background: linear-gradient(135deg, #fdf2f8, #eef2ff);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .card {
+      background: white;
+      padding: 40px;
+      border-radius: 16px;
+      max-width: 420px;
+      text-align: center;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    }
+
+    h1 {
+      font-size: 2.2rem;
+      margin-bottom: 10px;
+      color: #1f2933;
+    }
+
+    .date {
+      font-size: 0.9rem;
+      color: #6b7280;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 1rem;
+      color: #374151;
+      line-height: 1.6;
+      margin-bottom: 25px;
+    }
+
+    button {
+      background: #6366f1;
+      color: white;
+      border: none;
+      padding: 12px 20px;
+      border-radius: 10px;
+      font-size: 0.95rem;
+      cursor: pointer;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 20px rgba(99,102,241,0.3);
+    }
+
+    .hidden {
+      display: none;
+      margin-top: 20px;
+      font-size: 0.95rem;
+      color: #111827;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <h1>Happy Birthday, Deeksha Rathore  🎉</h1>
+    <div class="date">January 3rd · Turning 18 ✨</div>
+
+    <p>
+      Just wanted to wish you a really awesome birthday.<br>
+      <br>
+      
+    </p>
+
+    <button onclick="showMessage()">Click for a tiny surprise 🎁</button>
+
+    <div id="surprise" class="hidden">
+      Hope this year brings you good moments,  
+      new experiences, and a lot of reasons to smile 😊  
+      and you acihve the first step to fulfil the dream to become doctor by clearing neet 
+      all the best 
+      <br><br>
+      Have a great one!
+    </div>
+  </div>
+
+  <script>
+    function showMessage() {
+      document.getElementById("surprise").style.display = "block";
+    }
+  </script>
+
+</body>
+</html>
